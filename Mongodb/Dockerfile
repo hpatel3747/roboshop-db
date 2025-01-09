@@ -7,7 +7,6 @@
 #ENTRYPOINT  service mongod restart && bash
 #EXPOSE      27017
 
-
 # Use the official MongoDB image with the latest version
 FROM mongo:latest
 RUN sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf.orig
