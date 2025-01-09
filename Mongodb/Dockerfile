@@ -10,7 +10,7 @@
 
 # Use the official MongoDB image with the latest version
 FROM mongo:latest
-
+RUN sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
 # Expose port 27017 for MongoDB connections
 EXPOSE 27017
 
