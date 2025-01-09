@@ -25,5 +25,6 @@ CMD ["mongod", "--dbpath", "/data/db"]
 
 # to build from above file
 # docker build -t my-mongodb .
+# docker exec -it containerID "/bin/bash" # to go inside container shell
 # MONGODB_INITDB_ROOT_USERNAME
 # MONGODB_INITDB_ROOT_PASSWORD
