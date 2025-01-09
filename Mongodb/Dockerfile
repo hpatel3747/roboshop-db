@@ -4,5 +4,5 @@ RUN         dnf install mongodb-org -y
 RUN         sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
 RUN         systemctl enable mongod
 #RUN        service mongod start
-ENTRYPOINT  service mongod restart && bash
+#ENTRYPOINT  service mongod restart && bash
 EXPOSE      27017
